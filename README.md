@@ -45,7 +45,7 @@ POST `api/encrypt` <br>
 <br> Please use for example <strong>Postman</strong> <br> to send request type "form-data" with following settings: <br>
 ![image](https://user-images.githubusercontent.com/17851827/136826537-a5193431-24a6-410e-8376-d3352d86b4bf.png)
 
-<br><br>
+<br>
 file as type "file"<br>
 publicKey as "text"<br>
 If public key returned by API will not work please use the same key generated in main directory of project. It's the same key but without new lines. <br>
