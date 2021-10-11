@@ -49,8 +49,8 @@ POST `api/encrypt` <br>
 file as type "file"<br>
 publicKey as "text"<br>
 If public key returned by API will not work please use the same key generated in main directory of project. It's the same key but without new lines. <br>
-      <strong> Response: </strong> <br>
-      string base64 `some_numbers`
+<strong> Response: </strong> <br>
+string base64 `some_numbers`
 
 ## Software requeriments and additional informations
 
