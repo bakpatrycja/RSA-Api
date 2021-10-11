@@ -17,11 +17,11 @@ It allows to sign-in, generate token, RSA keys and encrypt file.
 <br>
 <strong>Request: </strong> <br>
  Body: <br>
-```{ "email": "example.user@mail.com", "password":"pass" }``` <br>
+`{ "email": "example.user@mail.com", "password":"pass" }` <br>
 Headers:  <br>
-```Content-Type: application/json``` <br>
+`Content-Type: application/json` <br>
 <strong> Response: </strong> <br>
-string ```example.token```<br> <br>
+string `example.token`<br> 
 
 
 2) POST `api/generate-key-pair` <br>
@@ -29,12 +29,13 @@ string ```example.token```<br> <br>
 <strong>Summary: </strong> Authenticate users's token and generate RSA keys pair based on user's email hidden in token.
    <br><strong>Request: </strong> <br>
    Headers:  <br>
-   ```Authorization: Bearer your_jwt_key``` <br>
+   `Authorization: Bearer your_jwt_key`
+   <br>
    <strong> Response: </strong> <br>
-   json ```{
+   json `{
    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\nProc-Type: 4,ENCRYPTED\nDEK-Info: AES-256-CBC,some numbers=\n-----END RSA PRIVATE KEY-----\n",
    "publicKey": "-----BEGIN RSA PUBLIC KEY-----\some numbers=\n-----END RSA PUBLIC KEY-----\n"
-   }```<br> <br>
+   }`<br> <br>
  
 3) POST `api/encrypt` <br>
    <br>
