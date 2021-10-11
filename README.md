@@ -43,8 +43,10 @@ string `example.token`<br> <br>
  <br><strong>Request: </strong> <br>
       Headers:  <br>
       `Authorization: Bearer your_jwt_key` <br>
-<br> Please use for example <strong>Postman</strong> <br> to send request type "form-data" with following settings:
-<br>![img_1.png](img_1.png)
+<br> Please use for example <strong>Postman</strong> <br> to send request type "form-data" with following settings: <br>
+![image](https://user-images.githubusercontent.com/17851827/136826000-6ed8b2fd-5bae-4143-8ba2-2ae43d8bf2d3.png)
+
+<br><br>
 file as type "file"<br>
 publicKey as "text"<br>
 If public key returned by API will not work please use the same key generated in main directory of project. It's the same key but without new lines. <br>
