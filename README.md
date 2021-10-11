@@ -17,11 +17,11 @@ It allows to sign-in, generate token, RSA keys and encrypt file.
 <br>
 <strong>Request: </strong> <br>
  Body: <br>
-`{ "email": "example.user@mail.com", "password":"pass" }` <br>
+```{ "email": "example.user@mail.com", "password":"pass" }``` <br>
 Headers:  <br>
-`Content-Type: application/json` <br>
+```Content-Type: application/json``` <br>
 <strong> Response: </strong> <br>
-string `example.token`<br> <br>
+string ```example.token```<br> <br>
 
 
 2) POST `api/generate-key-pair` <br>
@@ -29,12 +29,12 @@ string `example.token`<br> <br>
 <strong>Summary: </strong> Authenticate users's token and generate RSA keys pair based on user's email hidden in token.
    <br><strong>Request: </strong> <br>
    Headers:  <br>
-   `Authorization: Bearer your_jwt_key` <br>
+   ```Authorization: Bearer your_jwt_key``` <br>
    <strong> Response: </strong> <br>
-   json `{
+   json ```{
    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\nProc-Type: 4,ENCRYPTED\nDEK-Info: AES-256-CBC,some numbers=\n-----END RSA PRIVATE KEY-----\n",
    "publicKey": "-----BEGIN RSA PUBLIC KEY-----\some numbers=\n-----END RSA PUBLIC KEY-----\n"
-   }`<br> <br>
+   }```<br> <br>
  
 3) POST `api/encrypt` <br>
    <br>
@@ -42,7 +42,7 @@ string `example.token`<br> <br>
   <br>
  <br><strong>Request: </strong> <br>
       Headers:  <br>
-      `Authorization: Bearer your_jwt_key` <br>
+      ```Authorization: Bearer your_jwt_key``` <br>
 <br> Please use for example <strong>Postman</strong> <br> to send request type "form-data" with following settings: <br>
 [image](https://user-images.githubusercontent.com/17851827/136826000-6ed8b2fd-5bae-4143-8ba2-2ae43d8bf2d3.png)
 
@@ -51,7 +51,7 @@ file as type "file"<br>
 publicKey as "text"<br>
 If public key returned by API will not work please use the same key generated in main directory of project. It's the same key but without new lines. <br>
       <strong> Response: </strong> <br>
-      string base64 `some_numbers`
+      string base64 ```some_numbers```
 
 ## Software requeriments and additional informations
 
