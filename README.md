@@ -78,6 +78,10 @@ Run this command to start project:
 ```
 ts-node src/index.ts
 ```
+or
+```
+npm start
+```
 
 
 ## Users
